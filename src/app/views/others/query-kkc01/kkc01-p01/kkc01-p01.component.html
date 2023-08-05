@@ -1,0 +1,76 @@
+<div fxLayout="row warp" >
+  <div class="mat-card-redline"></div>
+  <!-- ขนาดพื้นฐาน      โทรศัพท์           	เเท็บเลต           	ขนาด HD           ขนาด FULL HD  -->
+  <div fxFlex="80" fxFlex.gt-xs="80" fxFlex.gt-sm="80" fxFlex.gt-md="80" fxFlex.gt-lg="80" >
+      <mat-card>
+          <mat-card-title>
+              <span style="font-size: 28px;">คำร้องทั่วไป General Request Form</span>
+              <mat-divider></mat-divider>
+          </mat-card-title>
+          <mat-card-content>
+            <div fxLayout="row warp">
+              <div fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100" fxFlex.gt-md="100" fxFlex.gt-lg="100">
+                <p style="font-size: 24px; margin-left:30px">แบบรายงานการยื่นขอคำร้องทั่วไป General Request Form</p>
+
+                <!-- วันที่มุมขวาบน -->
+                <div fxLayout="row" fxLayoutAlign="end center" style='margin-top: -30px;'>
+                  <h4 class="data">วันที่<span style="color: #AB3C3C;"> {{day}} </span>เดือน<span style="color: #AB3C3C;"> {{month}} </span>ปี<span style="color: #AB3C3C;"> {{year}} </span></h4>
+                </div>
+
+                <form class="example-form">
+                  <span style="font-size: 18px; margin-left:50px">เรื่อง</span>
+                  <mat-form-field appearance="outline" class="full-width" style="margin-left:10px">
+                    <input matInput placeholder="Title" />
+                  </mat-form-field><br>
+
+                  <span style="font-size: 18px; margin-left:50px">เรียน</span>
+                  <mat-form-field appearance="outline" class="full-width" style="margin-left:10px">
+                    <input matInput placeholder="Title" />
+                  </mat-form-field>
+                </form>
+
+                <div fxLayout="row" fxLayoutAlign="space-evenly center" >
+                  <p><span class="data">ชื่อ </span><span class="label">นายประชา พิมทะวงษ์</span></p>
+                  <p><span class="data">รหัสประจําตัวนักศึกษา </span><span class="label">63332110418-8</span></p><br><br>
+                </div>
+
+                <p class="data" style="margin-left:50px">ระดับการศึกษา</p>
+                <section style="margin:-10px 0 0 85px">
+                  <mat-checkbox class="data">ระดับ ปวช. Certificate</mat-checkbox><br>
+                  <mat-checkbox class="data">ระดับ ปวส. Diploma</mat-checkbox><br>
+                  <mat-checkbox class="data">ระดับปริญญาตรี Undergraduate</mat-checkbox><br>
+                  <mat-checkbox class="data">ระดับปริญญาโท Master's Degree</mat-checkbox><br>
+                  <mat-checkbox class="data">ระดับปริญญาเอก Doctoral Degree</mat-checkbox>
+                </section><br>
+
+                <div fxLayout="row" fxLayoutAlign="space-evenly center" >
+                  <p><span class="data">คณะ </span><span class="label">วิศวกรรมศาสตร์</span></p>
+                  <p><span class="data">สาขาวิชา </span><span class="label">วิศวกรรมคอมพิวเตอร์</span></p>
+                  <p><span class="data">ชั้นปีที่ </span><span class="label">4</span></p><br><br>
+                </div>
+
+                <span class="data" style="margin-left:50px">มีความประสงค์</span>
+                <mat-form-field appearance="outline" class="full-width" style="margin-left:10px">
+                  <input matInput placeholder="Title" />
+                </mat-form-field>
+                <mat-divider></mat-divider>
+              </div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////-------------- ปุ่มย้อนกลับ ---------------///////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+              <div fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100" fxFlex.gt-md="100" fxFlex.gt-lg="100" style="text-align: left; ;">
+                <div fxFlex="20" fxFlex.gt-xs="20" fxFlex.gt-sm="20" fxFlex.gt-md="20" fxFlex.gt-lg="20" style="text-align:start;margin-top: 15px;">
+                  <button  mat-stroked-button style="border-radius: 10px; color: #AB3C3C; border-color: #AB3C3C;" ><mat-icon>keyboard_arrow_left</mat-icon>ย้อนกลับ</button>
+                </div>
+                <div fxFlex="20" fxFlex.gt-xs="20" fxFlex.gt-sm="20" fxFlex.gt-md="20" fxFlex.gt-lg="20" style="text-align: right; margin-left:50%;margin-top: 15px;">
+                  <button  mat-stroked-button style="border-radius: 10px; color: #AB3C3C; border-color: #AB3C3C;" ><mat-icon>save</mat-icon>บันทึกร่าง</button>
+                </div>
+                <div fxFlex="20" fxFlex.gt-xs="20" fxFlex.gt-sm="20" fxFlex.gt-md="20" fxFlex.gt-lg="20" style="text-align: end; margin-left: 20px;margin-top: 15px;">
+                  <button  mat-flat-button style="border-radius: 10px; background-color: #AB3C3C; color: #FFF;"><mat-icon>check</mat-icon>ยืนยันการส่งข้อมูล</button>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+      </mat-card>
+  </div>
+</div>
